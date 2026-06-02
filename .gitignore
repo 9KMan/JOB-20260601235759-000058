@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Worker internal files (NEVER push these)
+SPEC.txt
+TASK.txt
+pid
+role
+worker.log
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data files (large binary data)
+*.parquet
+*.csv
+*.xlsx
+data/
+warehouse/
+
+# dbt
+dbt_logs/
+target/
+
+# Airflow
+airflow.cfg
+unittests.cfg
+*.pid
+
+# MinIO artifacts
+*.tar.gz

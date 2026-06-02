@@ -1,0 +1,14 @@
+FROM mcr.microsoft.com/azure-postgresql:latest
+
+ENV POSTGRES_DB=deal_analysis
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_PASSWORD=postgres
+
+# Enable PostGIS
+RUN apt-get update && \
+    apt-get install -y postgis postgresql-14-postgis-3 && \
+    apt-get clean
+
+EXPOSE 5432
+
+CMD ["postgres"]
